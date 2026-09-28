@@ -1,554 +1,292 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Soukaina Filali Architects</title>
-<meta name="description" content="Soukaina Filali Architects — architecture au Maroc. Habitat, équipements, commerce, réhabilitation.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&family=Instrument+Sans:wght@500&display=swap">
-<style>
-html,body{margin:0}
-:root{
-  --ground:#F5F2EC; --paper:#FBF9F5; --ink:#23201C; --grey:#6E675F; --soft:#A39B90; --line:#D9D2C7; --terre:#8A4B2E;
-  --serif:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
-  --sans:Inter,"Helvetica Neue",Arial,sans-serif;
-  --gut:clamp(16px,4.5vw,56px);
-  color-scheme:light;
-}
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Soukaina Filali Architects · Architecture au Maroc</title><meta name="description" content="Soukaina Filali Architects, agence d&#x27;architecture au Maroc. L&#x27;enquête d&#x27;abord, puis le dessin, puis la règle."><link rel="canonical" href="https://soukaina-filali.com/"><meta property="og:type" content="website"><meta property="og:title" content="Soukaina Filali Architects · Architecture au Maroc"><meta property="og:description" content="Soukaina Filali Architects, agence d&#x27;architecture au Maroc. L&#x27;enquête d&#x27;abord, puis le dessin, puis la règle."><meta property="og:image" content="https://soukaina-filali.com/img/marche-aerien-800.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="alternate" hreflang="fr" href="https://soukaina-filali.com/"><link rel="alternate" hreflang="en" href="https://soukaina-filali.com/en/"><link rel="alternate" hreflang="x-default" href="https://soukaina-filali.com/"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"><style>:root{--ground:#F5F2EC;--paper:#FBF9F5;--ink:#23201C;--grey:#6E675F;--line:#D9D2C7;--terre:#8A4B2E;--soft:#A39B90;
+--sans:"Instrument Sans","Helvetica Neue",Arial,sans-serif;--serif:"Instrument Serif","Iowan Old Style",Georgia,serif;
+--gut:clamp(16px,4.5vw,64px);--col:clamp(28px,4vw,72px);color-scheme:light}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.25s}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--ground);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-img{max-width:100%;display:block;height:auto}
-.wrap{max-width:1280px;margin:0 auto;padding-inline:var(--gut)}
-.lab{font:500 11px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--grey)}
-h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
-p{margin:0;max-width:62ch}
-:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 16.5px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+img{max-width:100%;height:auto;display:block}
+picture{display:block}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+:focus-visible{outline:1.5px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1360px;margin-inline:auto;padding-inline:var(--gut)}
+.lab{font:500 11.5px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--grey)}
+.kind{color:var(--terre)}
+.num{font-variant-numeric:tabular-nums}
+.proto{background:var(--ink);color:var(--ground);font:500 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:9px var(--gut)}
 
-/* header */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px}
-.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
-.brand svg{width:26px;height:26px;flex:none}
-.brand span{font:500 15px/1 var(--serif);letter-spacing:.18em}
-.brand small{display:block;font:500 8px/1 var(--sans);letter-spacing:.42em;color:var(--grey);margin-top:5px}
-nav ul{display:flex;gap:clamp(14px,2.4vw,36px);list-style:none;margin:0;padding:0}
-nav a{font:500 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--grey);padding:10px 0;display:inline-block}
+/* en-tête */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--ground);border-bottom:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:flex-end;gap:16px 32px;flex-wrap:wrap;padding-block:16px 14px}
+.brand{text-decoration:none;display:block;font:500 13px/1.15 var(--sans);letter-spacing:.2em}
+.brand small{display:block;font-size:8.5px;letter-spacing:.44em;margin-top:9px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px clamp(16px,2.6vw,40px)}
+nav a{font:500 11.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--grey);display:inline-block;padding-block:8px 6px;border-bottom:1px solid transparent}
 nav a:hover{color:var(--ink)}
-@media (max-width:720px){nav ul{gap:14px}nav li.opt{display:none}.brand small{display:none}}
+nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--ink)}
 
-/* hero */
-.hero{padding-block:clamp(48px,9vw,120px) clamp(40px,6vw,72px)}
-.hero .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:end}
-.hero h1{font-size:clamp(40px,6vw,78px);line-height:1.02;letter-spacing:-.005em}
-.hero .lede{display:grid;gap:18px;margin-top:32px;color:var(--grey);font-size:17px}
-.hero .lede p:first-child{color:var(--ink)}
-.hero .sig{margin-top:28px;font:italic 400 20px var(--serif)}
-.hero figure{margin:0}
-figcaption{font:400 12.5px/1.5 var(--sans);color:var(--grey);margin-top:10px;max-width:70ch}
+/* typographie */
+.display{font:400 clamp(38px,6.4vw,92px)/.98 var(--serif);letter-spacing:-.012em;max-width:17ch}
+.h2{font:400 clamp(32px,3.8vw,52px)/1.02 var(--serif)}
+.h3{font:400 clamp(26px,2.4vw,32px)/1.1 var(--serif)}
+.thesis{font:italic 400 clamp(24px,2.3vw,31px)/1.2 var(--serif);text-wrap:balance}
+.hero-sub{margin-top:24px;max-width:46ch;color:var(--grey);font-size:18px}
+.page-top{padding-block:clamp(48px,8vw,112px) clamp(32px,5vw,64px)}
+
+/* accueil */
+.hero{padding-block:clamp(48px,8vw,120px) clamp(32px,4vw,56px)}
+.dip-wrap{display:grid;gap:14px}
+.pair{display:flex;gap:clamp(12px,1.6vw,24px);align-items:flex-start}
+.pair>.fig,.pair>.pi{min-width:0}
+.dip-cap{font-size:14px;color:var(--grey);display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:10px;border-top:1px solid var(--line)}
+.dip-cap a{color:var(--ink);font-weight:500}
+.dip-cap .pl{color:var(--grey)}
+.encours{padding-block:clamp(40px,6vw,72px) 0;display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:var(--col);align-items:baseline}
+.encours ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.encours li{display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;font-size:15.5px;color:var(--grey)}
+.encours li .num{min-width:9.5em;color:var(--ink)}
+.encours li a{font:400 22px/1.2 var(--serif);color:var(--ink);text-decoration:none}
+.encours li a:hover{text-decoration:underline}
+
+/* figures */
+.fig{margin:0}
+figcaption{font-size:14px;line-height:1.5;color:var(--grey);margin-top:10px;max-width:68ch}
 figcaption b{font-weight:500;color:var(--ink)}
-@media (max-width:900px){.hero .grid{grid-template-columns:1fr}}
+.draw{background:var(--paper);border:1px solid var(--line);padding:clamp(14px,3vw,40px)}
+.draw figcaption{margin-top:18px}
+.draw img{mix-blend-mode:multiply}
+.fig img{cursor:zoom-in}
 
 /* index */
-.index{padding-block:clamp(40px,6vw,80px);border-top:1px solid var(--line)}
-.index-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
-.index-head h2{font-size:clamp(30px,3.6vw,44px)}
-.filters{display:flex;gap:6px;flex-wrap:wrap}
-.filters button{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;background:none;border:1px solid var(--line);color:var(--grey);padding:10px 16px;border-radius:999px;cursor:pointer;min-height:40px}
-.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--ground)}
-.table{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:640px}
-th{text-align:left;font:500 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--grey);padding:0 12px 12px 0;border-bottom:1px solid var(--ink)}
-td{padding:16px 12px 16px 0;border-bottom:1px solid var(--line);vertical-align:baseline;font-size:14px;color:var(--grey)}
-td:first-child a{font:400 22px/1.2 var(--serif);color:var(--ink);text-decoration:none}
-td:first-child a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
-tr.grp td{font:500 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--terre);padding-top:28px;border-bottom:none}
-.st{display:inline-flex;align-items:center;gap:8px;color:var(--ink);white-space:nowrap}
-.st::before{content:"";width:7px;height:7px;border-radius:50%;border:1px solid var(--ink)}
-.st.built::before{background:var(--ink)}
-.st.site::before{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%)}
-
-/* project */
-.proj{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
-.proj-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,5vw,80px)}
-.proj-text{position:sticky;top:96px;align-self:start;display:grid;gap:22px}
-.proj-text .kind{color:var(--terre)}
-.proj h2{font-size:clamp(38px,4.6vw,60px);line-height:1}
-.proj-text p.thesis{color:var(--ink);font:italic 400 clamp(22px,2.2vw,27px)/1.25 var(--serif);text-wrap:balance}
-.proj-text p{color:var(--grey);font-size:15.5px}
-dl.fiche{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin:6px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px}
-dl.fiche dt{font:500 10.5px/2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
-dl.fiche dd{margin:0;color:var(--ink)}
-.dec{list-style:none;margin:0;padding:18px 0 0;border-top:1px solid var(--line);display:grid;gap:14px}
-.dec li{font-size:14.5px;color:var(--grey)}
-.dec b{display:block;font:400 19px/1.25 var(--serif);color:var(--ink);margin-bottom:2px}
-.proj-imgs{display:grid;gap:clamp(28px,4vw,56px)}
-.proj-imgs figure{margin:0}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px)}
-.draw{background:var(--paper);padding:clamp(12px,2.5vw,32px);border:1px solid var(--line)}
-@media (max-width:900px){.proj-grid{grid-template-columns:1fr}.proj-text{position:static}}
-@media (max-width:560px){.pair{grid-template-columns:1fr}}
-
-/* research / agency */
-.band{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
-.band h2{font-size:clamp(34px,4vw,52px);line-height:1.05}
-.two{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,5vw,80px)}
-.two .body{display:grid;gap:22px;color:var(--grey);font-size:16.5px}
-.two .body p:first-child{color:var(--ink);font:400 clamp(22px,2.3vw,28px)/1.35 var(--serif);max-width:34ch}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px);margin-top:12px}
-.card{border-top:1px solid var(--ink);padding-top:18px;display:grid;gap:10px;align-content:start}
-.card h3{font-size:26px;line-height:1.15}
-.card p{font-size:15px;color:var(--grey)}
-.skifa{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin-top:36px;padding:28px;background:var(--paper);border:1px solid var(--line)}
-.skifa svg{width:72px;height:72px}
-.skifa p{font-size:15px;color:var(--grey)}
-.skifa p b{font:400 20px var(--serif);color:var(--ink);display:block;margin-bottom:4px}
-@media (max-width:900px){.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
-
-/* contact */
-.contact{background:var(--ink);color:var(--ground);padding-block:clamp(56px,8vw,104px)}
-.contact h2{font-size:clamp(34px,4vw,52px);color:var(--ground)}
-.contact .lab{color:var(--soft)}
-.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:40px}
-.cgrid div{display:grid;gap:8px;align-content:start}
-.cgrid a,.cgrid span.v{font:400 21px/1.3 var(--serif);text-decoration:none;color:var(--ground);word-break:break-word}
-.cgrid a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
-.legal{margin-top:56px;padding-top:20px;border-top:1px solid #4A4540;font-size:12px;color:var(--soft);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-@media (max-width:760px){.cgrid{grid-template-columns:1fr}}
-
-/* v2: architecture-site ergonomics */
-.brand span{font-size:16px}
-nav a[aria-current="page"]{color:var(--ink);box-shadow:inset 0 -1px 0 var(--ink)}
-.cover{position:relative;margin:0 auto}
-.cover{padding-top:clamp(20px,3vw,40px)}
-.cover img{width:100%;height:auto}
-.cover-cap{position:relative;margin-top:12px;font-size:12.5px;color:var(--grey)}
-.cover-cap a{text-decoration:none}.cover-cap b{font-weight:500;color:var(--ink)}
-.statement{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;padding-block:clamp(40px,6vw,88px) clamp(24px,3vw,40px)}
-.statement p{font:400 clamp(24px,2.8vw,36px)/1.25 var(--serif);max-width:30ch;text-wrap:balance}
-.more{font:500 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}
-.index{border-top:none;padding-block:clamp(24px,4vw,48px) clamp(64px,8vw,120px)}
-.tools{display:flex;gap:18px;flex-wrap:wrap}
-.pgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,3.5vw,56px) clamp(16px,2vw,32px)}
-.card-p{display:grid;gap:10px;text-decoration:none}
+.index{padding-block:clamp(56px,8vw,112px)}
+.index.page-top{padding-top:clamp(40px,6vw,80px)}
+.ix-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:clamp(24px,3vw,40px);padding-bottom:18px;border-bottom:1px solid var(--ink)}
+.count{font:500 12px var(--sans);letter-spacing:.1em;color:var(--grey);vertical-align:super}
+.tools{display:flex;gap:10px 24px;flex-wrap:wrap}
+.seg{display:flex;border:1px solid var(--line)}
+.seg button{font:500 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;background:none;border:0;color:var(--grey);padding:12px 14px;cursor:pointer;min-height:40px}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.pgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(36px,4vw,64px) clamp(16px,2vw,32px)}
+.card{display:grid;gap:8px;text-decoration:none}
 .thumb{display:block;aspect-ratio:3/2;overflow:hidden;background:var(--paper)}
-.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease,opacity .3s}
-.card-p:hover .thumb img{transform:scale(1.025)}
-@media (prefers-reduced-motion:reduce){.thumb img{transition:none}.card-p:hover .thumb img{transform:none}}
-.cname{font:400 24px/1.15 var(--serif)}
-.cmeta{font-size:12.5px;color:var(--grey);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.cmeta .st{color:var(--grey);font-size:12.5px}
-@media (max-width:980px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:560px){.pgrid{grid-template-columns:1fr}}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb.paper{border:1px solid var(--line)}
+.thumb.paper img{object-fit:contain;padding:6%;mix-blend-mode:multiply}
+.thumb.none{display:grid;place-items:center;font-size:12.5px;color:var(--grey)}
+.ttag{font-size:12.5px;color:var(--ink);font-weight:500;line-height:1.2}
+.cname{font:400 26px/1.1 var(--serif);margin-top:4px}
+.card:hover .cname{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+.cmeta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13.5px;color:var(--grey)}
+.m-dwg{display:none}
+.ix[data-mode="dessins"] .m-img{display:none}
+.ix[data-mode="dessins"] .m-dwg{display:grid;gap:8px}
+.m-img{display:grid;gap:8px}
+.tbl{display:none;overflow-x:auto}
+.ix[data-mode="liste"] .pgrid{display:none}
+.ix[data-mode="liste"] .tbl{display:block}
+table{width:100%;border-collapse:collapse;min-width:720px}
+th{text-align:left;font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--grey);padding:0 16px 12px 0;border-bottom:1px solid var(--line)}
+td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:baseline;font-size:14.5px;color:var(--grey)}
+td:first-child a{font:400 23px/1.15 var(--serif);color:var(--ink);text-decoration:none}
+td:first-child a:hover{text-decoration:underline}
+tr.grp td{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--terre);padding-top:30px;border-bottom:0}
+.legend{margin-top:40px;display:flex;gap:24px;flex-wrap:wrap;font-size:13px;color:var(--grey)}
+
+/* pastilles */
+.st{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;color:var(--ink)}
+.st::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;border:1px solid var(--ink);box-sizing:border-box}
+.st1::before{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%)}
+.st2::before{background:var(--ink)}
+.cmeta .st,.legend .st{color:var(--grey)}
+
+/* bande « le code » */
+.band{border-top:1px solid var(--line);padding-block:clamp(64px,9vw,128px)}
+.band-head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,48px)}
+.intro{max-width:56ch;color:var(--grey);font-size:17px}
+.rules{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.rules a{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr) minmax(0,2fr);gap:12px var(--col);align-items:baseline;padding-block:18px;border-bottom:1px solid var(--line);text-decoration:none}
+.rn{font:400 clamp(30px,3.4vw,46px)/1 var(--serif);color:var(--ink)}
+.rd{font-size:16px;color:var(--grey)}
+.rc{font-size:12.5px;color:var(--terre);text-align:right;letter-spacing:.04em}
+.rules a:hover .rn{font-style:italic}
+.rules.big .rn{font-size:clamp(36px,5vw,72px)}
+.rules.big a{padding-block:24px}
+
+/* page projet */
 .back{padding-top:28px}
-.back a{font:500 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--grey)}
+.back a{font:500 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--grey)}
 .back a:hover{color:var(--ink)}
-.proj{border-top:none;padding-block:20px 0}
-.proj-grid{padding-top:clamp(24px,3vw,40px)}
-.proj-imgs img{cursor:zoom-in}
-.pn{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:clamp(56px,8vw,104px);padding-block:28px clamp(48px,6vw,80px);border-top:1px solid var(--line)}
+.proj{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--col);padding-block:clamp(28px,4vw,48px) 0}
+.ptext{position:sticky;top:96px;align-self:start;display:grid;gap:20px;max-height:calc(100vh - 110px);overflow:auto;padding-bottom:24px;scrollbar-width:thin}
+.ptitle{font:400 clamp(40px,4.6vw,66px)/.98 var(--serif);letter-spacing:-.01em}
+.ptext>p:not(.thesis):not(.lab):not(.rl){color:var(--grey);font-size:16px}
+.dec{list-style:none;margin:0;padding:18px 0 0;border-top:1px solid var(--line);display:grid;gap:14px}
+.dec li{font-size:15px;color:var(--grey)}
+.dec b{display:block;font:400 21px/1.2 var(--serif);color:var(--ink);margin-bottom:3px}
+.rl{padding-top:16px;border-top:1px solid var(--line);font-size:15px;display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline}
+.rl a{color:var(--terre)}
+.fiche{display:grid;grid-template-columns:auto 1fr;gap:9px 22px;margin:0;padding-top:16px;border-top:1px solid var(--line);font-size:14px}
+.fiche dt{font:500 11px/1.9 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--grey)}
+.fiche dd{margin:0}
+.pimgs{display:grid;gap:clamp(36px,5vw,72px)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:clamp(64px,9vw,120px);padding-block:28px;border-top:1px solid var(--ink)}
 .pn a{text-decoration:none;display:grid;gap:6px}
 .pn a:last-child{text-align:right}
-.pn span{font:500 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--grey)}
-.pn b{font:400 clamp(22px,2.6vw,32px)/1.1 var(--serif)}
-.pn a:hover b{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
-.manifeste{padding-block:clamp(56px,9vw,128px) clamp(40px,6vw,80px);display:grid;gap:28px}
-.manifeste h1{font-size:clamp(40px,6vw,80px);line-height:1.02;max-width:14ch}
-.mbody{display:grid;gap:18px;max-width:64ch;color:var(--grey);font-size:17px;margin-left:auto}
+.pn span,.same span{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--grey)}
+.pn b,.same b{font:400 clamp(24px,2.6vw,34px)/1.1 var(--serif)}
+.pn a:hover b,.same a:hover b{text-decoration:underline}
+.same{padding-block:8px clamp(56px,8vw,96px);display:grid;gap:14px}
+.same div{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.same a{text-decoration:none;display:grid;gap:6px;padding-top:14px;border-top:1px solid var(--line)}
+.same span{color:var(--terre)}
+
+/* pages règle */
+.rule-head{padding-block:clamp(40px,6vw,88px) clamp(40px,5vw,72px);display:grid;gap:22px}
+.rule-t{font:400 clamp(64px,12vw,176px)/.9 var(--serif);letter-spacing:-.02em}
+.rule-p{max-width:52ch;color:var(--grey);font-size:18px}
+.moments{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(36px,5vw,72px) clamp(16px,2.4vw,36px);align-items:start}
+.plink{display:block;margin-top:6px;color:var(--terre);font-weight:500}
+
+/* recherche, agence */
+.cols3,.cols2{display:grid;gap:clamp(36px,5vw,72px) var(--col);padding-bottom:clamp(72px,10vw,140px)}
+.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cols2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cols3 article,.cols2 article{display:grid;gap:14px;align-content:start;padding-top:18px;border-top:1px solid var(--ink)}
+.cols3 p:not(.lab),.cols2 p:not(.lab){color:var(--grey);font-size:16px}
+.note a{color:var(--terre)}
+.manif{display:grid;gap:36px}
+.mbody{display:grid;gap:18px;max-width:62ch;margin-left:auto;color:var(--grey);font-size:18px}
 .mbody p:first-child{color:var(--ink)}
-.mbody .sig{font:italic 400 21px var(--serif);color:var(--ink)}
-.two h2{margin-top:18px}
-/* lightbox */
-.lb{position:fixed;inset:0;z-index:50;background:rgba(245,242,236,.98);display:grid;grid-template-rows:auto 1fr auto;padding:calc(env(safe-area-inset-top,0px) + 12px) var(--gut) calc(env(safe-area-inset-bottom,0px) + 16px)}
-.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:48px}
-.lb-top span{font:500 11px var(--sans);letter-spacing:.18em;color:var(--grey);font-variant-numeric:tabular-nums}
-.lb button{background:none;border:0;color:var(--ink);font:500 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;min-height:44px;min-width:44px;padding:0 8px}
-.lb-stage{display:flex;align-items:center;justify-content:center;min-height:0}
-.lb-stage img{max-width:100%;max-height:100%;object-fit:contain}
-.lb-bot{display:flex;justify-content:space-between;align-items:center;gap:16px}
-.lb-bot p{font-size:13px;color:var(--grey);max-width:80ch;margin:0}
+.sig{font:italic 400 24px var(--serif);color:var(--ink)!important}
 
-.brand .wm{display:block;font:500 13px/1.12 "Instrument Sans",Inter,Arial,sans-serif;letter-spacing:.16em;white-space:nowrap}
-.brand .wm i{display:block;height:.9em}
-.top .wrap{align-items:flex-end;padding-block:14px 12px}
-nav a{padding-bottom:0}
-@media (max-width:640px){.brand .wm{font-size:10.5px}nav ul{gap:14px}}
-.langbtn{font:500 11px var(--sans);letter-spacing:.18em;background:none;border:0;border-left:1px solid var(--line);padding:10px 0 0 16px;color:var(--ink);cursor:pointer}
-.langbtn:hover{text-decoration:underline;text-underline-offset:4px}
-</style>
+/* pied */
+.foot{background:var(--ink);color:var(--ground);padding-block:clamp(64px,9vw,120px) 36px;margin-top:0}
+.foot .lab{color:var(--soft)}
+.foot-h{font:400 clamp(40px,5.4vw,80px)/1 var(--serif);margin-top:16px}
+.cgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin:48px 0 0}
+.cgrid dt{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:8px}
+.cgrid dd{margin:0;font:400 21px/1.3 var(--serif);word-break:break-word}
+.cgrid a{text-decoration:none}.cgrid a:hover{text-decoration:underline}
+.sel{user-select:all}
+.legal{margin-top:64px;padding-top:18px;border-top:1px solid #4A4540;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--soft)}
 
+/* visionneuse */
+.lb{position:fixed;inset:0;z-index:60;background:var(--ground);display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:10px;padding:calc(env(safe-area-inset-top,0px) + 10px) var(--gut) calc(env(safe-area-inset-bottom,0px) + 14px)}
+.lb-top,.lb-bot{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.lb-n{font:500 11.5px var(--sans);letter-spacing:.14em;color:var(--grey);font-variant-numeric:tabular-nums}
+.lb button{background:none;border:0;font:500 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);cursor:pointer;min-height:44px;min-width:44px;padding:0 6px}
+.lb-stage{display:flex;align-items:center;justify-content:center;min-height:0;touch-action:pan-y}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;cursor:default}
+.lb-c{font-size:14px;color:var(--grey);max-width:80ch;text-align:center}
+.lb-c b{color:var(--ink);font-weight:500}
 
-</head>
-<body>
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#accueil" aria-label="Soukaina Filali Architects, accueil"><span class="wm">SOUKAINA<br>FILALI<i aria-hidden="true"></i>ARCHITECTS</span></a>
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="#projets" data-nav="projets">Projets</a></li>
-        <li><a href="#agence" data-nav="agence">Agence</a></li>
-        <li><a href="#contact" data-nav="contact">Contact</a></li>
-        <li><button type="button" id="langbtn" class="langbtn" aria-label="English version">EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+/* réactif */
+@media (max-width:980px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.cols3{grid-template-columns:1fr 1fr}.cgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.proj{grid-template-columns:1fr}.ptext{position:static;max-height:none;overflow:visible}.encours{grid-template-columns:1fr;gap:14px}}
+@media (max-width:640px){
+ .pgrid{grid-template-columns:1fr}.pair{flex-direction:column}.pair>*{flex:none!important;width:100%}
+ .rules a{grid-template-columns:1fr auto;gap:6px 16px}.rd{grid-column:1/-1;grid-row:2}.rc{grid-row:1;grid-column:2}
+ .moments,.cols3,.cols2,.same div,.cgrid{grid-template-columns:1fr}
+ .brand{font-size:11.5px}.bar{align-items:flex-start;flex-direction:column;gap:10px}
+ .pn{grid-template-columns:1fr}.pn a:last-child{text-align:left}
+}
+.method{padding-bottom:clamp(72px,10vw,140px)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px var(--col);border-top:1px solid var(--ink)}
+.steps li{display:grid;gap:10px;align-content:start;padding-top:18px}
+.steps .sn{font:500 12px var(--sans);letter-spacing:.14em;color:var(--terre)}
+.steps p{color:var(--grey);font-size:16px}
+.hero-sub a{color:var(--ink)}
+@media (max-width:980px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.steps{grid-template-columns:1fr}}
+.gest{display:grid;gap:14px;padding-block:clamp(28px,4vw,48px);margin-bottom:clamp(28px,4vw,48px);border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.gest-l{color:var(--grey);font-size:16px}
+.gest-g{font:italic 400 clamp(44px,7vw,104px)/1 var(--serif);display:flex;flex-wrap:wrap;gap:0 .45em}
+.fams{list-style:none;margin:0;padding:0;display:grid}
+.fam{border-bottom:1px solid var(--line);padding-block:16px}
+.fam-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.fam .rn{font-size:clamp(26px,3vw,40px)}
+.fam-r{list-style:none;margin:14px 0 6px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px var(--col)}
+.fam-r a{text-decoration:none;font-size:17px}
+.fam-r a:hover{text-decoration:underline}
+.rnum{font:500 11.5px var(--sans);letter-spacing:.08em;color:var(--terre);margin-right:6px;font-variant-numeric:tabular-nums}
+.more-r{color:var(--grey);font-size:14px}
+.band .more,.book-note{margin-top:28px;font-size:15px}
+.band .more a{color:var(--terre)}
+.book-note{color:var(--grey)}
+.code-fams{padding-bottom:clamp(40px,6vw,80px)}
+.rl{display:grid;gap:8px;padding-top:16px;border-top:1px solid var(--line)}
+.rl a{text-decoration:none;font-size:15px;color:var(--ink)}
+.rl a:hover{text-decoration:underline}
+.quote{font:italic 400 22px/1.3 var(--serif);color:var(--ink)!important}
+@media (max-width:640px){.fam-r{grid-template-columns:1fr}}
+.pimgs .draw img{max-height:88vh;width:auto;margin-inline:auto}
+.pimgs .fig img{max-height:92vh;width:auto;margin-inline:auto}
+.thumb picture{height:100%}
 
-<main id="haut">
-<section class="view" id="v-home" data-view="home">
-  <div class="cover wrap">
-    <img src="img/villa-jardin.jpg" alt="Villa L'Intervalle, façade côté jardin" width="1200" height="800">
-    <div class="cover-cap"><a href="#villa"><b>Villa L'Intervalle</b>, Marrakech · Rendu · Projet en cours</a></div>
-  </div>
-  <div class="wrap statement">
-    <p>Architecture au Maroc. Je commence par regarder ce que les gens font déjà : le projet ne remplace pas l'usage, il lui donne la forme qu'il n'avait pas.</p>
-    <a class="more" href="#agence">L'agence</a>
-  </div>
-  <div class="wrap index" id="projets">
-    <div class="index-head">
-      <h2>Projets</h2>
-      <div class="tools">
-        <div class="filters" role="group" aria-label="Filtrer les projets">
-          <button type="button" id="f-all" aria-pressed="true" data-f="all">Tout</button>
-          <button type="button" id="f-archi" aria-pressed="false" data-f="archi">Architecture</button>
-          <button type="button" id="f-int" aria-pressed="false" data-f="int">Intérieur</button>
-        </div>
-        <div class="filters" role="group" aria-label="Affichage">
-          <button type="button" id="d-grid" aria-pressed="true" data-d="grid">Images</button>
-          <button type="button" id="d-list" aria-pressed="false" data-d="list">Liste</button>
-        </div>
-      </div>
-    </div>
-    <ul class="pgrid" id="pgrid"><li data-cat="archi"><a class="card-p" href="#villa"><span class="thumb"><img loading="lazy" src="img/villa-rue.jpg" alt=""></span><span class="cname">Villa L'Intervalle</span><span class="cmeta">Marrakech · <span class="st">Projet en cours</span></span></a></li><li data-cat="archi"><a class="card-p" href="#marche"><span class="thumb"><img loading="lazy" src="img/marche-aerien.jpg" alt=""></span><span class="cname">Marché rural</span><span class="cmeta">Moualine El Oued · <span class="st">Concours, 2023 · non réalisé</span></span></a></li><li data-cat="archi"><a class="card-p" href="#lycee"><span class="thumb"><img loading="lazy" src="img/lycee-preau.jpg" alt=""></span><span class="cname">Lycée rural</span><span class="cmeta">Essaouira · <span class="st">Étude</span></span></a></li><li data-cat="archi"><a class="card-p" href="#immeuble"><span class="thumb"><img loading="lazy" src="img/immeuble-parvis.jpg" alt=""></span><span class="cname">Immeuble de logements</span><span class="cmeta">Casablanca · <span class="st">Concours</span></span></a></li><li data-cat="int"><a class="card-p" href="#medina"><span class="thumb"><img loading="lazy" src="img/medina-arcs.jpg" alt=""></span><span class="cname">Magasin dans la médina</span><span class="cmeta">Marrakech · <span class="st">Projet en cours</span></span></a></li><li data-cat="int"><a class="card-p" href="#infine"><span class="thumb"><img loading="lazy" src="img/infine-facade.jpg" alt=""></span><span class="cname">Épicerie In Finé</span><span class="cmeta">Bouskoura · <span class="st built">Livré, 2020</span></span></a></li><li data-cat="int"><a class="card-p" href="#rabat"><span class="thumb"><img loading="lazy" src="img/rabat-facade.jpg" alt=""></span><span class="cname">Épicerie fine</span><span class="cmeta">Rabat · <span class="st">Non réalisé</span></span></a></li><li data-cat="int"><a class="card-p" href="#duplex"><span class="thumb"><img loading="lazy" src="img/duplex-entree.jpg" alt=""></span><span class="cname">Appartement en duplex</span><span class="cmeta">Casablanca · <span class="st">Conception</span></span></a></li></ul>
-    <div class="table" id="plist" hidden>
-      <table><thead><tr><th>Projet</th><th>Lieu</th><th>Programme</th><th>Statut</th></tr></thead><tbody><tr class="grp" data-cat="archi"><td colspan="4">Architecture</td></tr><tr data-cat="archi"><td><a href="#villa">Villa L'Intervalle</a></td><td>Marrakech</td><td>Maison individuelle</td><td><span class="st">Projet en cours</span></td></tr><tr data-cat="archi"><td><a href="#marche">Marché rural</a></td><td>Moualine El Oued</td><td>Marché hebdomadaire</td><td><span class="st">Concours, 2023 · non réalisé</span></td></tr><tr data-cat="archi"><td><a href="#lycee">Lycée rural</a></td><td>Essaouira</td><td>Lycée et internat</td><td><span class="st">Étude</span></td></tr><tr data-cat="archi"><td><a href="#immeuble">Immeuble de logements</a></td><td>Casablanca</td><td>Logement collectif</td><td><span class="st">Concours</span></td></tr><tr class="grp" data-cat="int"><td colspan="4">Architecture intérieure</td></tr><tr data-cat="int"><td><a href="#medina">Magasin dans la médina</a></td><td>Marrakech</td><td>Boutique, atelier, soins</td><td><span class="st">Projet en cours</span></td></tr><tr data-cat="int"><td><a href="#infine">Épicerie In Finé</a></td><td>Bouskoura</td><td>Épicerie fine</td><td><span class="st built">Livré, 2020</span></td></tr><tr data-cat="int"><td><a href="#rabat">Épicerie fine</a></td><td>Rabat</td><td>Épicerie fine</td><td><span class="st">Non réalisé</span></td></tr><tr data-cat="int"><td><a href="#duplex">Appartement en duplex</a></td><td>Casablanca</td><td>Réhabilitation</td><td><span class="st">Conception</span></td></tr></tbody></table>
-    </div>
-  </div>
-</section>
-
-<!-- VILLA -->
-<article class="proj view" hidden data-view="proj" id="villa" data-cat="archi">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture</div>
-      <h2>Villa L'Intervalle</h2>
-      <p class="thesis">Entre deux pièces, il y a une troisième chose.</p>
-      <p>La Villa L'Intervalle n'est pas une maison, c'est une respiration. Elle ne s'impose pas, elle relie. Elle ne reproduit pas une image de Marrakech : elle en reprend les sensations. L'épaisseur des murs, l'ombre, les seuils, la terre, la lumière filtrée, le rapport intime entre dedans et dehors.</p>
-      <p>L'intervalle n'est pas ce qui reste quand on a dessiné les pièces. C'est un seuil d'ombre avant la lumière, une circulation, un cadrage sur l'horizon, la respiration plantée entre la maison et sa clôture. Chaque lieu y réunit un usage, une sensation et un rapport au dehors.</p>
-      <ul class="dec">
-        <li><b>Le mur devient un lieu.</b>Il est épais. Il fabrique l'ombre, accueille une assise, une niche, un encadrement.</li>
-        <li><b>Ce qui n'est pas cadré disparaît.</b>Chaque ouverture vise quelque chose : un morceau de ciel, un arbre, un horizon.</li>
-        <li><b>La maison se découvre par séquences.</b>Des seuils successifs ralentissent le pas.</li>
-        <li><b>Le sous-sol est habité.</b>La lumière y descend par les claustras, les cours anglaises et les puits de lumière.</li>
-      </ul>
-      <dl class="fiche"><dt>Lieu</dt><dd>Marrakech</dd><dt>Programme</dt><dd>Maison individuelle, R+1 sur sous-sol</dd><dt>Matière</dt><dd>Terre, claustras de terre cuite</dd><dt>Statut</dt><dd>Projet en cours</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/villa-rue.jpg" alt="Façade sur rue de la villa, fermée, claustra de terre cuite sur toute la hauteur de l'étage"><figcaption><b>Rendu.</b> La façade sur rue, la plus fermée : elle protège. Le claustra tient la lumière.</figcaption></figure>
-      <figure class="draw"><img loading="lazy" src="img/villa-plan.jpg" alt="Plan du rez-de-chaussée de la villa, volumes articulés, piscine et jardin"><figcaption><b>Plan du rez-de-chaussée.</b> Des volumes articulés et, entre eux, des respirations.</figcaption></figure>
-      <div class="pair">
-        <figure><img loading="lazy" src="img/villa-escalier.jpg" alt="Escalier longé par un claustra et un puits de lumière"><figcaption><b>Rendu.</b> L'escalier. La lumière arrive avant la pièce où l'on va.</figcaption></figure>
-        <figure><img loading="lazy" src="img/villa-couloir.jpg" alt="Couloir de l'étage, lumière en damier sur le sol"><figcaption><b>Rendu.</b> Le couloir de l'étage. Il ne mène pas seulement quelque part : il est déjà un endroit.</figcaption></figure>
-      </div>
-      <figure><img loading="lazy" src="img/villa-balcon.jpg" alt="Balcon couvert de la chambre principale face à l'Atlas"><figcaption><b>Rendu.</b> Le balcon de la chambre principale. Être dehors, la tête couverte, face à l'Atlas.</figcaption></figure>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- MARCHE -->
-<article class="proj view" hidden data-view="proj" id="marche" data-cat="archi">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture</div>
-      <h2>Marché rural</h2>
-      <p class="thesis">Ce qu'on prend pour du désordre est déjà une organisation.</p>
-      <p>Chaque dimanche, le souk de Had Ouled Ziane s'installe sur un terrain nu. On n'y vient pas seulement acheter : on s'y salue, on boit le thé près des voitures, on fait couper les cheveux des enfants, on passe la journée.</p>
-      <p>Le projet ne réorganise rien. Il redessine ce que les marchands ont déjà tracé, et n'ajoute que ce qui manque : l'ombre, l'eau, des étals construits, un sol continu.</p>
-      <ul class="dec">
-        <li><b>L'ombre dirige l'informel.</b>Une marche pose une limite là où un mur serait de trop.</li>
-        <li><b>On ne ferme pas, on inclut.</b>Le mur bas ne monte jamais jusqu'à couper.</li>
-        <li><b>Le vent classe les étals.</b>L'analyse des vents a séparé la volaille de la viande rouge.</li>
-        <li><b>Un placard sous chaque étal.</b>Le marché ne repart pas de zéro chaque semaine.</li>
-      </ul>
-      <dl class="fiche"><dt>Lieu</dt><dd>Moualine El Oued, province de Benslimane</dd><dt>Programme</dt><dd>Marché hebdomadaire</dd><dt>Matière</dt><dd>Matériaux locaux</dd><dt>Statut</dt><dd>Concours, 2023 · non réalisé</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/marche-aerien.jpg" alt="Vue aérienne du marché : rues, cours et étals"><figcaption><b>Rendu.</b> Les rues, les cours et les étals suivent le tracé que le souk s'était déjà donné.</figcaption></figure>
-      <figure><img loading="lazy" src="img/marche-mur.jpg" alt="Photographies du marché existant affichées et regroupées sur un mur"><figcaption><b>L'enquête.</b> Le marché existant, photographié, imprimé, regroupé sur un mur. Rien n'est tracé tant que le mur n'a pas parlé.</figcaption></figure>
-      <figure><img loading="lazy" src="img/marche-rue.jpg" alt="Rue principale du marché, étals sous des abris de bois"><figcaption><b>Rendu.</b> La rue principale. Le mur monte juste assez pour poser la marchandise, jamais assez pour couper.</figcaption></figure>
-      <div class="pair">
-        <figure><img loading="lazy" src="img/marche-coiffeurs.jpg" alt="Espace des coiffeurs du souk, ouvert sur la rue"><figcaption><b>Rendu.</b> Les coiffeurs. On ne s'isole pas, on se donne à voir.</figcaption></figure>
-        <figure><img loading="lazy" src="img/marche-anes.jpg" alt="Abri des ânes avec eau et ombre"><figcaption><b>Rendu.</b> L'abri des ânes, avec l'eau et l'ombre.</figcaption></figure>
-      </div>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- LYCEE -->
-<article class="proj view" hidden data-view="proj" id="lycee" data-cat="archi">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture</div>
-      <h2>Lycée rural</h2>
-      <p class="thesis">Le vent a placé les bâtiments, la marche a réglé le reste.</p>
-      <p>En pleine arganeraie, il n'y a rien pour se protéger : ni rue, ni mur mitoyen, ni ombre portée d'un autre bâtiment. Le vent est la seule donnée constante du site, et il a servi de règle.</p>
-      <p>Les bâtiments ne composent pas une figure. Chacun est posé du bon côté du vent, et ce qui les tient ensemble, ce sont les cours et les préaux entre eux, pas un axe.</p>
-      <ul class="dec">
-        <li><b>On entre par un préau.</b>On ne débouche jamais directement dans la cour.</li>
-        <li><b>La marche régule.</b>Elle sépare sans fermer, et sert de banc à qui ne la franchit pas.</li>
-        <li><b>La bibliothèque déborde.</b>On y lit dehors autant que dedans.</li>
-      </ul>
-      <dl class="fiche"><dt>Lieu</dt><dd>Essaouira</dd><dt>Programme</dt><dd>Lycée, internat, réfectoire, mosquée, logements</dd><dt>Matière</dt><dd>Matériaux locaux</dd><dt>Statut</dt><dd>Étude</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/lycee-aerien.jpg" alt="Vue aérienne du lycée dans l'arganeraie"><figcaption><b>Rendu.</b> Le lycée dans l'arganeraie. Chaque bâtiment est posé pour être du bon côté du vent.</figcaption></figure>
-      <div class="pair">
-        <figure class="draw"><img loading="lazy" src="img/lycee-plan.jpg" alt="Plan général du lycée"><figcaption><b>Plan général.</b> L'internat autour de sa propre cour, l'enseignement en anneau autour de la grande cour.</figcaption></figure>
-        <figure><img loading="lazy" src="img/lycee-preau.jpg" alt="Arrivée sous le préau"><figcaption><b>Rendu.</b> L'arrivée. On passe sous le préau avant de voir quoi que ce soit du lycée.</figcaption></figure>
-      </div>
-      <figure><img loading="lazy" src="img/lycee-marche.jpg" alt="Élèves assis sur une marche entre deux niveaux de cour"><figcaption><b>Rendu.</b> La marche sépare deux niveaux de sol et sert de banc à qui ne la franchit pas.</figcaption></figure>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- IMMEUBLE -->
-<article class="proj view" hidden data-view="proj" id="immeuble" data-cat="archi">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture</div>
-      <h2>Immeuble de logements</h2>
-      <p class="thesis">La façade n'est pas une peau, c'est une épaisseur.</p>
-      <p>Une baie sans protection, plein sud, c'est une pièce inhabitable une partie de l'année. Le projet ne pose pas de brise-soleil devant le vitrage : il recule la pièce. La loggia est assez profonde pour que le soleil s'arrête dedans, jamais sur le verre.</p>
-      <p>D'un niveau à l'autre, les loggias se décalent, et l'immeuble cesse d'être un empilement pour devenir un relief. Aucune ne regarde droit dans celle du voisin.</p>
-      <dl class="fiche"><dt>Lieu</dt><dd>Casablanca</dd><dt>Programme</dt><dd>Logement collectif</dd><dt>Façade</dt><dd>Loggias profondes en retrait, décalées par niveau</dd><dt>Statut</dt><dd>Concours</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/immeuble-parvis.jpg" alt="Immeuble de logements vu depuis le parvis, loggias profondes décalées"><figcaption><b>Rendu.</b> L'arrivée, depuis le parvis. L'entrée se tient dans le creux, entre les deux ailes.</figcaption></figure>
-      <figure><img loading="lazy" src="img/immeuble-cour.jpg" alt="Cour plantée entre les deux ailes de l'immeuble"><figcaption><b>Rendu.</b> La cour plantée. Les loggias se décalent d'un niveau à l'autre.</figcaption></figure>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- MEDINA -->
-<article class="proj view" hidden data-view="proj" id="medina" data-cat="int">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture intérieure</div>
-      <h2>Magasin dans la médina</h2>
-      <p class="thesis">On voit la lumière, on ne voit pas d'où elle vient.</p>
-      <p>Un local existant sur trois niveaux, dont aucun angle n'est droit. Le projet ne le redresse pas : il pousse l'escalier dans l'angle, range tout contre les murs biais, et laisse la profondeur du magasin d'un seul tenant.</p>
-      <p>Les produits sont logés dans l'épaisseur des murs, la lumière est mise dans les niches avec eux. On vend au rez-de-chaussée, on fabrique à l'étage, on soigne au sous-sol.</p>
-      <ul class="dec">
-        <li><b>Le mur range.</b>Rien n'est appuyé contre le mur : le mur est le meuble.</li>
-        <li><b>Une seule matière.</b>Terre aux murs, terre cuite au sol, brique aux niches.</li>
-        <li><b>Le jour vient d'en haut, filtré.</b>Une verrière cachée, et dessous des tuiles retournées, travaillées à la main.</li>
-      </ul>
-      <dl class="fiche"><dt>Lieu</dt><dd>Médina de Marrakech</dd><dt>Programme</dt><dd>Boutique, atelier et cabines de soin sur trois niveaux</dd><dt>Matière</dt><dd>Brique de terre, zellige, terre cuite</dd><dt>Statut</dt><dd>Projet en cours</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/medina-arcs.jpg" alt="Deux arcs sur la ruelle, niches éclairées à l'intérieur"><figcaption><b>Rendu.</b> Les deux arcs sur la ruelle. Depuis la rue, on voit l'escalier avant de voir le magasin.</figcaption></figure>
-      <div class="pair">
-        <figure class="draw"><img loading="lazy" src="img/medina-plan.jpg" alt="Plan du rez-de-chaussée, quadrilatère sans angle droit, escalier hélicoïdal"><figcaption><b>Plan.</b> Rien n'est d'équerre. Le mur le plus faux reçoit les niches.</figcaption></figure>
-        <figure class="draw"><img loading="lazy" src="img/medina-coupe.jpg" alt="Coupe sur les trois niveaux du magasin"><figcaption><b>Coupe.</b> Le jour traverse la terre cuite avant d'entrer.</figcaption></figure>
-      </div>
-      <figure><img loading="lazy" src="img/medina-rdc.jpg" alt="Rez-de-chaussée, niches creusées dans la brique et escalier hélicoïdal"><figcaption><b>Rendu.</b> Le rez-de-chaussée. Les niches sont creusées dans l'épaisseur de la brique.</figcaption></figure>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- IN FINE -->
-<article class="proj view" hidden data-view="proj" id="infine" data-cat="int">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture intérieure</div>
-      <h2>Épicerie In Finé</h2>
-      <p class="thesis">Ranger n'est pas un détail : c'est le plan.</p>
-      <p>Le mur long est une carte : l'Italie, la France, l'Asie, puis la meule et la truffe. On ne cherche pas un rayon, on longe des pays.</p>
-      <p>Le frais ne s'aligne pas contre un mur : il forme un U dans lequel on entre et où l'on est servi de trois côtés. Aucune cloison ; ce sont les comptoirs, les enseignes suspendues et le dessin du sol qui découpent l'espace. On lit le magasin avec les pieds avant de le lire avec les yeux.</p>
-      <dl class="fiche"><dt>Lieu</dt><dd>Bouskoura</dd><dt>Programme</dt><dd>Épicerie fine</dd><dt>Matière</dt><dd>Bois, carreaux de ciment, terre cuite, laiton</dd><dt>Statut</dt><dd>Livré, 2020 · exploité jusqu'en 2025</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/infine-facade.jpg" alt="Façade de l'épicerie au couchant, trois grandes vitrines entre les palmiers"><figcaption><b>Photographie.</b> La façade au couchant. Trois grandes vitrines donnent le magasin en entier.</figcaption></figure>
-      <div class="pair">
-        <figure class="draw"><img loading="lazy" src="img/infine-plan.jpg" alt="Plan de l'épicerie : mur long, U du frais, façade oblique"><figcaption><b>Plan.</b> Le mur long, le U du frais, la façade oblique.</figcaption></figure>
-        <figure><img loading="lazy" src="img/infine-fromagerie.jpg" alt="Comptoir de la fromagerie avec enseigne suspendue"><figcaption><b>Photographie.</b> La fromagerie. L'enseigne nomme, le sol délimite.</figcaption></figure>
-      </div>
-      <figcaption>Photographies : Soukaina Filali Architects.</figcaption>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- RABAT -->
-<article class="proj view" hidden data-view="proj" id="rabat" data-cat="int">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture intérieure</div>
-      <h2>Épicerie fine, Rabat</h2>
-      <p class="thesis">Le rayonnage n'est pas posé contre le mur, il est le mur.</p>
-      <p>Un mur de béton, une ouverture carrée et, derrière le verre, un châssis de chêne qui prend toute la hauteur d'homme, tourne l'angle et fait tout le magasin.</p>
-      <p>De loin, les bocaux et les paquets forment une texture, comme un claustra qu'on aurait rempli. De près, chacun redevient un produit qu'on prend en main. Au-dessus de la grille, le volume reste vide : il suffit de lever les yeux pour trouver de l'air.</p>
-      <dl class="fiche"><dt>Lieu</dt><dd>Rabat</dd><dt>Programme</dt><dd>Épicerie fine, façade et intérieur</dd><dt>Matière</dt><dd>Chêne massif, béton</dd><dt>Statut</dt><dd>Non réalisé</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/rabat-facade.jpg" alt="Façade : mur plein, une ouverture carrée, grille de chêne derrière le verre"><figcaption><b>Rendu.</b> La façade. Un mur plein, une seule ouverture, et la grille de chêne derrière le verre.</figcaption></figure>
-      <figure><img loading="lazy" src="img/rabat-sec.jpg" alt="Allée intérieure bordée par la grille de chêne remplie de produits"><figcaption><b>Rendu.</b> L'allée sèche. La marchandise fait la texture du mur.</figcaption></figure>
-      <figure class="draw"><img loading="lazy" src="img/rabat-coupe.jpg" alt="Coupe transversale : la grille s'arrête à hauteur d'homme, le volume continue au-dessus"><figcaption><b>Coupe transversale.</b> La hauteur qu'on ne remplit pas.</figcaption></figure>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<!-- DUPLEX -->
-<article class="proj view" hidden data-view="proj" id="duplex" data-cat="int">
-  <div class="wrap back"><a href="#projets">← Tous les projets</a></div>
-  <div class="wrap proj-grid">
-    <div class="proj-text">
-      <div class="lab kind">Architecture intérieure</div>
-      <h2>Appartement en duplex</h2>
-      <p class="thesis">Rien n'était déplaçable. Tout a été assumé.</p>
-      <p>L'appartement était plein de courbes. Les redresser aurait coûté cher et donné un lieu tiède : elles sont gardées, puis accentuées, jusqu'à devenir le système du projet.</p>
-      <p>Une entrée sombre, une cuisine posée sur la porte, un faux plafond qui écrasait, un escalier impossible à déplacer. Aucun de ces défauts n'a été maquillé : chacun est devenu une décision.</p>
-      <dl class="fiche"><dt>Lieu</dt><dd>Casablanca</dd><dt>Programme</dt><dd>Appartement en duplex, réhabilitation</dd><dt>Matière</dt><dd>Chêne clair, bronze brossé</dd><dt>Statut</dt><dd>Conception</dd></dl>
-    </div>
-    <div class="proj-imgs">
-      <figure><img loading="lazy" src="img/duplex-entree.jpg" alt="Entrée : garde-corps de bronze brossé et chêne clair"><figcaption><b>Rendu.</b> L'entrée. Le garde-corps de bronze sombre contre le chêne clair.</figcaption></figure>
-      <figure><img loading="lazy" src="img/duplex-vaisselier.jpg" alt="Entrée créée à la place de l'ancienne cuisine, vaisselier et banquette en chêne"><figcaption><b>Rendu.</b> L'entrée créée là où se tenait la cuisine.</figcaption></figure>
-    </div>
-  </div>
-  <nav class="wrap pn" aria-label="Projet précédent et suivant"></nav>
-</article>
-
-<section class="view" id="v-agence" data-view="agence" hidden>
-  <div class="wrap manifeste">
-    <div class="lab">Agence</div>
-    <h1>Je ne commence jamais par une forme.</h1>
-    <div class="mbody">
-      <p>Je commence par regarder ce que les gens font déjà : par où ils entrent, où ils s'arrêtent, ce qu'ils posent par terre, ce qu'ils contournent. Un lieu a toujours des règles avant qu'on y construise. Elles ne sont écrites nulle part, et pourtant tout le monde les respecte.</p>
-      <p>Le travail consiste à les retrouver, puis à les tenir. Une marche pose une limite là où un mur serait de trop. Une ombre décide d'une implantation sans rien interdire. Le projet ne remplace pas l'usage : il lui donne la forme qu'il n'avait pas.</p>
-      <p>Un lieu arrive rarement propre. Il a des courbes qu'on n'a pas choisies, un escalier au mauvais endroit, un plafond trop bas. Je ne corrige pas les défauts d'un lieu, j'en fais le projet.</p>
-      <p class="sig">Soukaina Filali, architecte</p>
-    </div>
-  </div>
-  <div class="band"><div class="wrap two">
-    <div><div class="lab">L'agence</div><h2>Soukaina Filali Architects</h2></div>
-    <div class="body">
-      <p>Une agence d'architecture au Maroc. Du premier relevé au chantier, une même règle : l'usage d'abord.</p>
-      <p>L'agence travaille l'habitat, les équipements, le commerce et la réhabilitation, en maîtrise d'œuvre complète : conception, dossier de permis, consultation des entreprises et suivi de chantier.</p>
-      <p>Soukaina Filali est architecte DESA, HMONP, diplômée de l'École Spéciale d'Architecture de Paris. Elle a exercé en France, au sein d'agences et de groupes de construction, sur des programmes de logement, de santé, de tertiaire et de concours, avant de fonder son agence au Maroc. Elle enseigne l'architecture intérieure au Collège Art &amp; Design de Casablanca, en Master exécutif.</p>
-    </div>
-  </div></div>
-  <div class="band" id="recherche"><div class="wrap two">
-    <div><div class="lab">Recherche</div><h2>L'habiter avant la forme</h2></div>
-    <div class="body">
-      <p>Tout part d'un terrain : avant de dessiner une règle, il faut l'avoir vue tenir chez ceux qui habitent.</p>
-      <div class="cards">
-        <div class="card"><div class="lab">Diplôme · École Spéciale d'Architecture, Paris</div><h3>L'habitat social au Maroc</h3><p>Une enquête de terrain menée en vivant avec les habitants de douars, de logements sociaux, de logements non réglementés et de bidonvilles à Casablanca. Les modes de vie y sont relevés, et l'on distingue ce qui relève du choix de ce qui relève de la contrainte. De ce terrain est né un code architectural propre à cette culture. Prix du meilleur diplôme.</p></div>
-        <div class="card"><div class="lab">Livre en cours</div><h3>La Fabrique de l'Invisible</h3><p>Des règles spatiales tirées du vernaculaire marocain : le seuil, le filtre, l'épaisseur, l'ombre. Des règles qui ne sont écrites nulle part et que tout le monde respecte. Ce sont elles qui irriguent les projets de l'agence.</p></div>
-      </div>
-    </div>
-  </div></div>
-</section>
-</main>
-
-<footer class="contact" id="contact">
-  <div class="wrap">
-    <div class="lab">Contact</div>
-    <h2 style="margin-top:18px">Parlons d'un lieu.</h2>
-    <div class="cgrid">
-      <div><span class="lab">Écrire</span><a href="mailto:sfilali@soukaina-filali.com">sfilali@soukaina-filali.com</a></div>
-      <div><span class="lab">Appeler</span><span class="v">+212 6 61 97 60 22</span></div>
-      <div><span class="lab">Voir</span><a href="https://www.instagram.com/soukaina_filali_architects/" target="_blank" rel="noopener">@soukaina_filali_architects</a></div>
-    </div>
-    <div class="legal"><span>Soukaina Filali Architects</span><span>Les rendus sont des images de projet. Chaque projet porte son statut.</span></div>
-  </div>
-</footer>
-
-<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image agrandie">
-  <div class="lb-top"><span id="lb-n"></span><button type="button" id="lb-x">Fermer</button></div>
-  <div class="lb-stage"><img id="lb-img" alt=""></div>
-  <div class="lb-bot"><button type="button" id="lb-p">← Préc.</button><p id="lb-c"></p><button type="button" id="lb-s">Suiv. →</button></div>
-</div>
-<script>
-(function(){
-  var projs=[].slice.call(document.querySelectorAll('article.proj'));
-  var views=[].slice.call(document.querySelectorAll('.view'));
-  // prev/next
-  projs.forEach(function(a,i){
-    var p=projs[(i-1+projs.length)%projs.length],n=projs[(i+1)%projs.length];
-    var nm=function(x){return x.querySelector('h2').textContent};
-    a.querySelector('.pn').innerHTML='<a href="#'+p.id+'"><span>Projet précédent</span><b>'+nm(p)+'</b></a><a href="#'+n.id+'"><span>Projet suivant</span><b>'+nm(n)+'</b></a>';
-  });
-  function show(el){views.forEach(function(v){v.hidden=(v!==el)})}
-  function mark(k){document.querySelectorAll('[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===k);if(a.dataset.nav===k)a.setAttribute('aria-current','page')})}
-  function route(){
-    var h=location.hash.replace('#','');var home=document.getElementById('v-home');
-    var pr=projs.filter(function(a){return a.id===h})[0];
-    if(pr){show(pr);mark('projets');window.scrollTo(0,0);document.title=pr.querySelector('h2').textContent+' · Soukaina Filali Architects';return}
-    document.title='Soukaina Filali Architects';
-    if(h==='agence'||h==='recherche'){show(document.getElementById('v-agence'));mark('agence');if(h==='agence')window.scrollTo(0,0);else document.getElementById('recherche').scrollIntoView();return}
-    show(home);
-    if(h==='projets'){mark('projets');document.getElementById('projets').scrollIntoView()}
-    else if(h==='contact'){mark('contact');document.getElementById('contact').scrollIntoView()}
-    else{mark('');window.scrollTo(0,0)}
-  }
-  window.addEventListener('hashchange',route);route();
-  // filters
-  var ff=document.querySelectorAll('[data-f]');
-  ff.forEach(function(b){b.addEventListener('click',function(){var f=b.dataset.f;
-    ff.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
-    document.querySelectorAll('#pgrid li,#plist tr[data-cat]').forEach(function(el){el.hidden=!(f==='all'||el.dataset.cat===f)});})});
-  var dd=document.querySelectorAll('[data-d]');
-  dd.forEach(function(b){b.addEventListener('click',function(){dd.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
-    var list=b.dataset.d==='list';document.getElementById('pgrid').hidden=list;document.getElementById('plist').hidden=!list;})});
-  // lightbox
-  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-c'),ln=document.getElementById('lb-n'),set=[],k=0,last=null;
-  function open(i){var f=set[i];k=i;li.src=f.src;li.alt=f.alt;lc.textContent=f.cap;ln.textContent=(i+1)+' / '+set.length;lb.hidden=false;document.body.style.overflow='hidden';document.getElementById('lb-x').focus()}
-  function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
-  projs.forEach(function(a){var imgs=[].slice.call(a.querySelectorAll('.proj-imgs img'));
-    imgs.forEach(function(im,i){im.tabIndex=0;im.setAttribute('role','button');
-      var go=function(){last=im;set=imgs.map(function(x){var c=x.closest('figure');return{src:x.src,alt:x.alt,cap:c&&c.querySelector('figcaption')?c.querySelector('figcaption').textContent:''}});open(i)};
-      im.addEventListener('click',go);im.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});});});
-  document.getElementById('lb-x').addEventListener('click',close);
-  document.getElementById('lb-p').addEventListener('click',function(){open((k-1+set.length)%set.length)});
-  document.getElementById('lb-s').addEventListener('click',function(){open((k+1)%set.length)});
-  lb.addEventListener('keydown',function(e){if(e.key==='Escape')close();if(e.key==='ArrowLeft')open((k-1+set.length)%set.length);if(e.key==='ArrowRight')open((k+1)%set.length)});
+/* v3 : planche d'index, contrôles typographiques, pied discret */
+.pgrid{display:flex!important;flex-wrap:wrap;gap:clamp(36px,4vw,56px) clamp(16px,2vw,28px);grid-template-columns:none}
+.pgrid::after{content:"";flex-grow:1e4}
+.pgrid>li{flex:var(--r) var(--r) calc(var(--r) * clamp(170px,19vw,290px));min-width:0}
+.pgrid>li[hidden]{display:none!important}
+.card{display:grid;gap:8px;text-decoration:none}
+.card img{width:100%;height:auto;background:var(--paper)}
+.cap{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-top:4px}
+.cap .tg{font:500 12px var(--sans);color:var(--ink)}
+.cap .cname{font:400 22px/1.15 var(--serif);margin:0}
+.card:hover .cname{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+.cmeta{justify-content:flex-start;gap:6px 14px}
+@media (max-width:640px){.pgrid>li{flex:1 1 100%}}
+.seg{border:0;gap:18px}
+.seg button{padding:10px 0;min-height:40px;border:0!important;background:none!important;color:var(--grey)!important;border-bottom:1px solid transparent!important}
+.seg button[aria-pressed="true"]{color:var(--ink)!important;border-bottom-color:var(--ink)!important}
+.tools{gap:6px 40px}
+.hero .display{font-size:clamp(34px,4.6vw,64px);max-width:16ch}
+.foot{background:var(--ground);color:var(--ink);border-top:1px solid var(--ink);padding-block:clamp(40px,6vw,72px) 28px}
+.foot .lab{color:var(--grey)}
+.cgrid{margin-top:20px}
+.cgrid dt{color:var(--grey)}
+.cgrid dd{font:400 19px/1.3 var(--serif)}
+.legal{border-top-color:var(--line);color:var(--grey);margin-top:40px}
+</style></head><body><header class="top"><div class="wrap bar"><a class="brand" href="./" aria-label="Soukaina Filali Architects, accueil"><span>SOUKAINA<br>FILALI</span><small>ARCHITECTS</small></a><nav aria-label="Navigation principale"><ul><li><a href="projets/">Projets</a></li><li><a href="recherche/">Recherche</a></li><li><a href="agence/">Agence</a></li><li><a href="#contact">Contact</a></li><li><a class="lang" href="en/" hreflang="en" lang="en">EN</a></li></ul></nav></div></header><main><section class="wrap hero"><h1 class="display">Je commence par regarder ce que les gens font déjà.</h1><p class="hero-sub">Agence d'architecture au Maroc. J'écoute, j'accroche, j'écris, puis je dessine. <a href="agence/#methode">La méthode</a></p></section><section class="wrap dip-wrap" aria-label="De l'enquête au projet"><div class="pair dip"><figure class="fig" style="flex:0.9269 1 0"><picture><img src="img/marche-releve-1600.jpg" srcset="img/marche-releve-800.jpg 800w, img/marche-releve-1600.jpg 1600w" sizes="(min-width:900px) 50vw, 100vw" alt="Relevé dessiné à la main : rues en jaune, emplacements des métiers annotés en couleur" width="1878" height="2026" fetchpriority="high" decoding="async"></picture><figcaption><b>L'enquête.</b> Le souk relevé à la main. En jaune, les rues tracées par l'usage.</figcaption></figure><figure class="fig" style="flex:0.8000 1 0"><picture><img src="img/marche-aerien-1600.jpg" srcset="img/marche-aerien-800.jpg 800w, img/marche-aerien-1600.jpg 860w" sizes="(min-width:900px) 35vw, 100vw" alt="Vue aérienne du marché : rues, cours et étals" width="860" height="1075" fetchpriority="high" decoding="async"></picture><figcaption><b>Rendu.</b> Le projet garde cet ordre et n'ajoute que l'ombre, l'eau, des étals construits.</figcaption></figure></div><p class="dip-cap"><span class="pl"><a href="projets/marche-rural/">Marché rural</a>, souk de Had Ouled Ziane</span><span class="st st0">Concours, 2023 · non réalisé</span></p></section><section class="wrap encours"><p class="lab">En cours</p><ul><li><span class="num">Marrakech</span><a href="projets/villa-l-intervalle/">Villa L&#x27;Intervalle</a><span>Architecture</span></li><li><span class="num">Marrakech</span><a href="projets/magasin-medina/">Magasin dans la médina</a><span>Architecture intérieure</span></li></ul></section><section class="wrap index" id="projets"><div class="ix-head"><h2 class="h2">Projets</h2><div class="tools"><div class="seg" role="group" aria-label="Affichage"><button type="button" data-mode="images" aria-pressed="true">Images</button><button type="button" data-mode="liste" aria-pressed="false">Liste</button></div><div class="seg" role="group" aria-label="Filtrer"><button type="button" data-f="all" aria-pressed="true">Tout</button><button type="button" data-f="archi" aria-pressed="false">Architecture</button><button type="button" data-f="int" aria-pressed="false">Intérieur</button></div></div></div><div class="ix" data-mode="images"><ul class="pgrid"><li data-disc="archi" style="--r:1.5000"><a class="card" href="projets/villa-l-intervalle/"><picture><img src="img/villa-rue-1600.jpg" srcset="img/villa-rue-800.jpg 800w, img/villa-rue-1600.jpg 1200w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1200" height="800" loading="lazy" decoding="async" style="view-transition-name:vt-villa-l-intervalle"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Villa L&#x27;Intervalle</span></span><span class="cmeta"><span>Marrakech</span><span class="st st0">Projet en cours</span></span></a></li><li data-disc="archi" style="--r:0.8000"><a class="card" href="projets/marche-rural/"><picture><img src="img/marche-aerien-1600.jpg" srcset="img/marche-aerien-800.jpg 800w, img/marche-aerien-1600.jpg 860w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="860" height="1075" loading="lazy" decoding="async" style="view-transition-name:vt-marche-rural"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Marché rural</span></span><span class="cmeta"><span>Had Ouled Ziane</span><span class="st st0">Concours, 2023</span></span></a></li><li data-disc="archi" style="--r:1.5005"><a class="card" href="projets/lycee-rural/"><picture><img src="img/lycee-preau-1600.jpg" srcset="img/lycee-preau-800.jpg 800w, img/lycee-preau-1600.jpg 1400w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1400" height="933" loading="lazy" decoding="async" style="view-transition-name:vt-lycee-rural"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Lycée rural</span></span><span class="cmeta"><span>Province d&#x27;Essaouira</span><span class="st st0">Concours</span></span></a></li><li data-disc="archi" style="--r:1.3312"><a class="card" href="projets/immeuble-logements/"><picture><img src="img/immeuble-parvis-1600.jpg" srcset="img/immeuble-parvis-800.jpg 800w, img/immeuble-parvis-1600.jpg 1447w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1447" height="1087" loading="lazy" decoding="async" style="view-transition-name:vt-immeuble-logements"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Immeuble de logements</span></span><span class="cmeta"><span>Casablanca</span><span class="st st0">Concours</span></span></a></li><li data-disc="int" style="--r:1.4990"><a class="card" href="projets/magasin-medina/"><picture><img src="img/medina-arcs-1600.jpg" srcset="img/medina-arcs-800.jpg 800w, img/medina-arcs-1600.jpg 1535w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1535" height="1024" loading="lazy" decoding="async" style="view-transition-name:vt-magasin-medina"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Magasin dans la médina</span></span><span class="cmeta"><span>Médina de Marrakech</span><span class="st st0">Projet en cours</span></span></a></li><li data-disc="int" style="--r:1.5000"><a class="card" href="projets/in-fine/"><picture><img src="img/infine-chocolaterie-1600.jpg" srcset="img/infine-chocolaterie-800.jpg 800w, img/infine-chocolaterie-1600.jpg 1536w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1536" height="1024" loading="lazy" decoding="async" style="view-transition-name:vt-in-fine"></picture><span class="cap"><b class="tg">Photographie.</b> <span class="cname">Épicerie In Finé</span></span><span class="cmeta"><span>Bouskoura</span><span class="st st2">Livré, 2020</span></span></a></li><li data-disc="int" style="--r:1.5000"><a class="card" href="projets/epicerie-rabat/"><picture><img src="img/rabat-facade-1600.jpg" srcset="img/rabat-facade-800.jpg 800w, img/rabat-facade-1600.jpg 1536w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1536" height="1024" loading="lazy" decoding="async" style="view-transition-name:vt-epicerie-rabat"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Épicerie fine, Rabat</span></span><span class="cmeta"><span>Rabat</span><span class="st st0">Non réalisé</span></span></a></li><li data-disc="int" style="--r:1.5000"><a class="card" href="projets/duplex/"><picture><img src="img/duplex-entree-1600.jpg" srcset="img/duplex-entree-800.jpg 800w, img/duplex-entree-1600.jpg 1536w" sizes="(min-width:980px) 34vw, (min-width:640px) 50vw, 92vw" alt="" width="1536" height="1024" loading="lazy" decoding="async" style="view-transition-name:vt-duplex"></picture><span class="cap"><b class="tg">Rendu.</b> <span class="cname">Appartement en duplex</span></span><span class="cmeta"><span>Casablanca</span><span class="st st0">Conception livrée</span></span></a></li></ul><div class="tbl"><table><thead><tr><th>Projet</th><th>Lieu</th><th>Programme</th><th>Statut</th><th>Année</th></tr></thead><tbody><tr class="grp" data-disc="archi"><td colspan="5">Architecture</td></tr><tr data-disc="archi"><td><a href="projets/villa-l-intervalle/">Villa L&#x27;Intervalle</a></td><td>Marrakech</td><td>Maison individuelle, R+1 sur sous-sol</td><td><span class="st st0">Projet en cours</span></td><td class="num">—</td></tr><tr data-disc="archi"><td><a href="projets/marche-rural/">Marché rural</a></td><td>Had Ouled Ziane, Moualine El Oued, province de Benslimane</td><td>Souk hebdomadaire : produits frais, volaille, bétail, artisans, restauration, boutiques, salle de prière, points d&#x27;eau, sanitaires</td><td><span class="st st0">Concours, 2023</span></td><td class="num">2023</td></tr><tr data-disc="archi"><td><a href="projets/lycee-rural/">Lycée rural</a></td><td>Province d&#x27;Essaouira</td><td>Lycée, internat, réfectoire, mosquée, logements</td><td><span class="st st0">Concours</span></td><td class="num">—</td></tr><tr data-disc="archi"><td><a href="projets/immeuble-logements/">Immeuble de logements</a></td><td>Casablanca</td><td>Logement collectif</td><td><span class="st st0">Concours</span></td><td class="num">—</td></tr><tr class="grp" data-disc="int"><td colspan="5">Architecture intérieure</td></tr><tr data-disc="int"><td><a href="projets/magasin-medina/">Magasin dans la médina</a></td><td>Médina de Marrakech</td><td>Boutique, atelier et cabines de soin sur trois niveaux</td><td><span class="st st0">Projet en cours</span></td><td class="num">—</td></tr><tr data-disc="int"><td><a href="projets/in-fine/">Épicerie In Finé</a></td><td>Bouskoura</td><td>Épicerie fine</td><td><span class="st st2">Livré, 2020</span></td><td class="num">2020</td></tr><tr data-disc="int"><td><a href="projets/epicerie-rabat/">Épicerie fine, Rabat</a></td><td>Rabat</td><td>Épicerie fine, façade et intérieur</td><td><span class="st st0">Non réalisé</span></td><td class="num">—</td></tr><tr data-disc="int"><td><a href="projets/duplex/">Appartement en duplex</a></td><td>Casablanca</td><td>Appartement en duplex, réhabilitation</td><td><span class="st st0">Conception livrée</span></td><td class="num">—</td></tr></tbody></table></div></div><p class="legend"><span class="st st0">Projet</span><span class="st st2">Construit</span></p></section><section class="band"><div class="wrap"><div class="band-head"><p class="lab">Livre en cours</p><h2 class="h2"><em>La Fabrique de l'Invisible</em></h2><p class="intro">Un code architectural déduit de la manière d'habiter au Maroc. Né de l'enquête du diplôme, repris depuis à l'épreuve des projets. Il paraîtra en livre.</p><p class="more"><a href="recherche/">Recherche →</a></p></div></div></section></main><footer class="foot" id="contact"><div class="wrap"><p class="lab">Contact</p><dl class="cgrid"><div><dt>Écrire</dt><dd><a href="mailto:sfilali@soukaina-filali.com">sfilali@soukaina-filali.com</a></dd></div><div><dt>Appeler</dt><dd><span class="sel">+212 6 61 97 60 22</span></dd></div><div><dt>WhatsApp</dt><dd><a href="https://wa.me/212661976022" target="_blank" rel="noopener">Écrire sur WhatsApp</a></dd></div><div><dt>Instagram</dt><dd><a href="https://www.instagram.com/soukaina_filali_architects/" target="_blank" rel="noopener">@soukaina_filali_architects</a></dd></div></dl><div class="legal"><span>Soukaina Filali Architects · Mohammedia</span><span>Chaque image porte son étiquette. Chaque projet porte son statut.</span></div></div></footer><script>(function(){
+var d=document,EN=d.documentElement.lang==='en',L=EN?{x:'Close',p:'Previous image',s:'Next image',d:'Enlarged image',z:'Enlarge: '}:{x:'Fermer',p:'Image précédente',s:'Image suivante',d:'Image agrandie',z:'Agrandir : '};
+/* anciennes ancres du site v1 */
+var old={villa:'villa-l-intervalle',marche:'marche-rural',lycee:'lycee-rural',immeuble:'immeuble-logements',medina:'magasin-medina',infine:'in-fine',rabat:'epicerie-rabat',duplex:'duplex'};
+var h=location.hash.slice(1);
+if(d.querySelector('.hero')&&!EN){if(old[h])location.replace('projets/'+old[h]+'/');else if(h==='agence')location.replace('agence/');}
+/* index : affichage et filtre */
+d.querySelectorAll('.ix').forEach(function(ix){
+  var root=ix.parentNode;
+  root.querySelectorAll('[data-mode]').forEach(function(b){if(b===ix)return;b.addEventListener('click',function(){
+    root.querySelectorAll('button[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});ix.dataset.mode=b.dataset.mode;
+    try{localStorage.setItem('sfa-mode',b.dataset.mode)}catch(e){}})});
+  root.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('click',function(){
+    root.querySelectorAll('[data-f]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    ix.querySelectorAll('[data-disc]').forEach(function(el){el.hidden=!(b.dataset.f==='all'||el.dataset.disc===b.dataset.f)})})});
+  var m;try{m=localStorage.getItem('sfa-mode')}catch(e){}
+  if(m){var b=root.querySelector('button[data-mode="'+m+'"]');if(b)b.click()}
+});
+/* visionneuse */
+var figs=[].slice.call(d.querySelectorAll('.pimgs .fig, .moments .fig, .dip .fig'));if(!figs.length)return;
+var lb=d.createElement('div');lb.className='lb';lb.hidden=true;lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.setAttribute('aria-label',L.d);
+lb.innerHTML='<div class="lb-top"><span class="lb-n"></span><button type="button" class="lb-x">'+L.x+'</button></div><div class="lb-stage"><img alt=""></div><div class="lb-bot"><button type="button" class="lb-p" aria-label="'+L.p+'">←</button><p class="lb-c"></p><button type="button" class="lb-s" aria-label="'+L.s+'">→</button></div>';
+d.body.appendChild(lb);
+var im=lb.querySelector('img'),k=0,last=null;
+function open(i){k=(i+figs.length)%figs.length;var f=figs[k],s=f.querySelector('img');im.src=s.currentSrc||s.src;im.alt=s.alt;
+  lb.querySelector('.lb-c').innerHTML=f.querySelector('figcaption').innerHTML.replace(/<a[^>]*>.*?<\/a>/g,'');
+  lb.querySelector('.lb-n').textContent=(k+1)+' / '+figs.length;lb.hidden=false;d.body.style.overflow='hidden';lb.querySelector('.lb-x').focus()}
+function close(){lb.hidden=true;d.body.style.overflow='';if(last)last.focus()}
+figs.forEach(function(f,i){var s=f.querySelector('img');s.tabIndex=0;s.setAttribute('role','button');s.setAttribute('aria-label',L.z+s.alt);
+  var go=function(){last=s;open(i)};s.addEventListener('click',go);
+  s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})});
+lb.querySelector('.lb-x').onclick=close;lb.querySelector('.lb-p').onclick=function(){open(k-1)};lb.querySelector('.lb-s').onclick=function(){open(k+1)};
+lb.addEventListener('keydown',function(e){if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(k-1);if(e.key==='ArrowRight')open(k+1)});
+var x0=null;lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)open(k+(dx<0?1:-1));x0=null});
 })();
-</script>
-<script>
-(function(){
-  var EN={"Projets": "Projects", "Agence": "Studio", "Contact": "Contact", ", Marrakech · Rendu · Projet en cours": ", Marrakech · Rendering · Ongoing project", "Architecture au Maroc. Je commence par regarder ce que les gens font déjà : le projet ne remplace pas l'usage, il lui donne la forme qu'il n'avait pas.": "Architecture in Morocco. I begin by watching what people already do: the project does not replace the use, it gives it the form it lacked.", "L'agence": "The studio", "Tout": "All", "Architecture": "Architecture", "Intérieur": "Interiors", "Images": "Images", "Liste": "List", "Projet en cours": "Ongoing project", "Marché rural": "Rural market", "Concours, 2023 · non réalisé": "Competition, 2023 · unbuilt", "Lycée rural": "Rural high school", "Étude": "Study", "Immeuble de logements": "Housing building", "Concours": "Competition", "Magasin dans la médina": "Shop in the medina", "Épicerie In Finé": "In Finé delicatessen", "Livré, 2020": "Completed, 2020", "Épicerie fine": "Delicatessen", "Non réalisé": "Unbuilt", "Appartement en duplex": "Duplex apartment", "Conception": "Design phase", "Projet": "Project", "Lieu": "Location", "Programme": "Programme", "Statut": "Status", "Maison individuelle": "Private house", "Marché hebdomadaire": "Weekly market", "Lycée et internat": "High school and boarding", "Logement collectif": "Collective housing", "Architecture intérieure": "Interior architecture", "Boutique, atelier, soins": "Shop, workshop, treatments", "Réhabilitation": "Refurbishment", "← Tous les projets": "← All projects", "Entre deux pièces, il y a une troisième chose.": "Between two rooms, there is a third thing.", "La Villa L'Intervalle n'est pas une maison, c'est une respiration. Elle ne s'impose pas, elle relie. Elle ne reproduit pas une image de Marrakech : elle en reprend les sensations. L'épaisseur des murs, l'ombre, les seuils, la terre, la lumière filtrée, le rapport intime entre dedans et dehors.": "Villa L'Intervalle is not a house, it is a breath. It does not impose itself, it connects. It does not reproduce an image of Marrakech; it takes up its sensations. The thickness of walls, shade, thresholds, earth, filtered light, the intimate bond between inside and outside.", "L'intervalle n'est pas ce qui reste quand on a dessiné les pièces. C'est un seuil d'ombre avant la lumière, une circulation, un cadrage sur l'horizon, la respiration plantée entre la maison et sa clôture. Chaque lieu y réunit un usage, une sensation et un rapport au dehors.": "The interval is not what is left once the rooms are drawn. It is a threshold of shade before the light, a passage, a frame on the horizon, the planted breath between the house and its boundary wall. Each place brings together a use, a sensation and a relation to the outside.", "Le mur devient un lieu.": "The wall becomes a place.", "Il est épais. Il fabrique l'ombre, accueille une assise, une niche, un encadrement.": "It is thick. It makes shade, holds a seat, a niche, a frame.", "Ce qui n'est pas cadré disparaît.": "What is not framed disappears.", "Chaque ouverture vise quelque chose : un morceau de ciel, un arbre, un horizon.": "Every opening aims at something: a piece of sky, a tree, a horizon.", "La maison se découvre par séquences.": "The house reveals itself in sequences.", "Des seuils successifs ralentissent le pas.": "Successive thresholds slow the step.", "Le sous-sol est habité.": "The basement is inhabited.", "La lumière y descend par les claustras, les cours anglaises et les puits de lumière.": "Light comes down through the screens, the sunken courts and the light wells.", "Maison individuelle, R+1 sur sous-sol": "Private house, two storeys over a basement", "Matière": "Material", "Terre, claustras de terre cuite": "Earth, terracotta screens", "Rendu.": "Rendering.", "La façade sur rue, la plus fermée : elle protège. Le claustra tient la lumière.": "The street façade, the most closed: it protects. The screen holds the light.", "Plan du rez-de-chaussée.": "Ground floor plan.", "Des volumes articulés et, entre eux, des respirations.": "Articulated volumes and, between them, breathing spaces.", "L'escalier. La lumière arrive avant la pièce où l'on va.": "The stair. The light arrives before the room you are heading to.", "Le couloir de l'étage. Il ne mène pas seulement quelque part : il est déjà un endroit.": "The upper corridor. It does not only lead somewhere: it is already a place.", "Le balcon de la chambre principale. Être dehors, la tête couverte, face à l'Atlas.": "The main bedroom balcony. Being outside, head covered, facing the Atlas.", "Ce qu'on prend pour du désordre est déjà une organisation.": "What looks like disorder is already an organisation.", "Chaque dimanche, le souk de Had Ouled Ziane s'installe sur un terrain nu. On n'y vient pas seulement acheter : on s'y salue, on boit le thé près des voitures, on fait couper les cheveux des enfants, on passe la journée.": "Every Sunday, the souk of Had Ouled Ziane sets up on bare ground. People do not come only to buy: they greet one another, drink tea by the cars, have the children's hair cut, spend the day.", "Le projet ne réorganise rien. Il redessine ce que les marchands ont déjà tracé, et n'ajoute que ce qui manque : l'ombre, l'eau, des étals construits, un sol continu.": "The project reorganises nothing. It redraws what the traders have already traced, and adds only what is missing: shade, water, built stalls, a continuous ground.", "L'ombre dirige l'informel.": "Shade directs the informal.", "Une marche pose une limite là où un mur serait de trop.": "A step sets a limit where a wall would be too much.", "On ne ferme pas, on inclut.": "Nothing is closed, everything is included.", "Le mur bas ne monte jamais jusqu'à couper.": "The low wall never rises high enough to cut off.", "Le vent classe les étals.": "The wind sorts the stalls.", "L'analyse des vents a séparé la volaille de la viande rouge.": "The wind study separated poultry from red meat.", "Un placard sous chaque étal.": "A cupboard under every stall.", "Le marché ne repart pas de zéro chaque semaine.": "The market no longer starts from scratch every week.", "Moualine El Oued, province de Benslimane": "Moualine El Oued, Benslimane province", "Matériaux locaux": "Local materials", "Les rues, les cours et les étals suivent le tracé que le souk s'était déjà donné.": "Streets, courtyards and stalls follow the layout the souk had already given itself.", "L'enquête.": "The survey.", "Le marché existant, photographié, imprimé, regroupé sur un mur. Rien n'est tracé tant que le mur n'a pas parlé.": "The existing market, photographed, printed, grouped on a wall. Nothing is drawn until the wall has spoken.", "La rue principale. Le mur monte juste assez pour poser la marchandise, jamais assez pour couper.": "The main street. The wall rises just enough to set goods on, never enough to cut off.", "Les coiffeurs. On ne s'isole pas, on se donne à voir.": "The barbers. No one hides; everyone is on view.", "L'abri des ânes, avec l'eau et l'ombre.": "The donkey shelter, with water and shade.", "Le vent a placé les bâtiments, la marche a réglé le reste.": "The wind placed the buildings; the step settled the rest.", "En pleine arganeraie, il n'y a rien pour se protéger : ni rue, ni mur mitoyen, ni ombre portée d'un autre bâtiment. Le vent est la seule donnée constante du site, et il a servi de règle.": "In the middle of the argan grove there is nothing to shelter behind: no street, no party wall, no shadow from another building. The wind is the only constant on the site, and it became the rule.", "Les bâtiments ne composent pas une figure. Chacun est posé du bon côté du vent, et ce qui les tient ensemble, ce sont les cours et les préaux entre eux, pas un axe.": "The buildings do not compose a figure. Each one sits on the right side of the wind, and what holds them together is the courtyards and covered porches between them, not an axis.", "On entre par un préau.": "You enter through a porch.", "On ne débouche jamais directement dans la cour.": "You never come straight out into the courtyard.", "La marche régule.": "The step regulates.", "Elle sépare sans fermer, et sert de banc à qui ne la franchit pas.": "It separates without closing, and becomes a bench for those who do not cross it.", "La bibliothèque déborde.": "The library spills over.", "On y lit dehors autant que dedans.": "People read outside as much as inside.", "Lycée, internat, réfectoire, mosquée, logements": "High school, boarding, refectory, mosque, housing", "Le lycée dans l'arganeraie. Chaque bâtiment est posé pour être du bon côté du vent.": "The school in the argan grove. Each building sits on the right side of the wind.", "Plan général.": "Site plan.", "L'internat autour de sa propre cour, l'enseignement en anneau autour de la grande cour.": "Boarding around its own courtyard; classrooms in a ring around the main courtyard.", "L'arrivée. On passe sous le préau avant de voir quoi que ce soit du lycée.": "Arrival. You pass under the porch before seeing anything of the school.", "La marche sépare deux niveaux de sol et sert de banc à qui ne la franchit pas.": "The step separates two ground levels and is a bench for those who do not cross it.", "La façade n'est pas une peau, c'est une épaisseur.": "The façade is not a skin, it is a thickness.", "Une baie sans protection, plein sud, c'est une pièce inhabitable une partie de l'année. Le projet ne pose pas de brise-soleil devant le vitrage : il recule la pièce. La loggia est assez profonde pour que le soleil s'arrête dedans, jamais sur le verre.": "An unprotected south-facing window makes a room uninhabitable for part of the year. The project adds no sunshade in front of the glass: it pulls the room back. The loggia is deep enough for the sun to stop inside it, never on the glass.", "D'un niveau à l'autre, les loggias se décalent, et l'immeuble cesse d'être un empilement pour devenir un relief. Aucune ne regarde droit dans celle du voisin.": "From one floor to the next the loggias shift, and the building stops being a stack and becomes a relief. None looks straight into its neighbour's.", "Façade": "Façade", "Loggias profondes en retrait, décalées par niveau": "Deep recessed loggias, offset floor by floor", "L'arrivée, depuis le parvis. L'entrée se tient dans le creux, entre les deux ailes.": "Arrival from the forecourt. The entrance sits in the hollow between the two wings.", "La cour plantée. Les loggias se décalent d'un niveau à l'autre.": "The planted courtyard. The loggias shift from one floor to the next.", "On voit la lumière, on ne voit pas d'où elle vient.": "You see the light, not where it comes from.", "Un local existant sur trois niveaux, dont aucun angle n'est droit. Le projet ne le redresse pas : il pousse l'escalier dans l'angle, range tout contre les murs biais, et laisse la profondeur du magasin d'un seul tenant.": "An existing unit on three levels, with not a single right angle. The project does not straighten it: it pushes the stair into the corner, stores everything against the skewed walls, and keeps the depth of the shop in one piece.", "Les produits sont logés dans l'épaisseur des murs, la lumière est mise dans les niches avec eux. On vend au rez-de-chaussée, on fabrique à l'étage, on soigne au sous-sol.": "Products are lodged in the thickness of the walls, with the light set in the niches beside them. Selling on the ground floor, making upstairs, treatments below.", "Le mur range.": "The wall stores.", "Rien n'est appuyé contre le mur : le mur est le meuble.": "Nothing leans against the wall: the wall is the furniture.", "Une seule matière.": "A single material.", "Terre aux murs, terre cuite au sol, brique aux niches.": "Earth on the walls, terracotta on the floor, brick in the niches.", "Le jour vient d'en haut, filtré.": "Daylight comes from above, filtered.", "Une verrière cachée, et dessous des tuiles retournées, travaillées à la main.": "A hidden skylight, and beneath it upturned tiles, worked by hand.", "Médina de Marrakech": "Medina of Marrakech", "Boutique, atelier et cabines de soin sur trois niveaux": "Shop, workshop and treatment rooms on three levels", "Brique de terre, zellige, terre cuite": "Earth brick, zellige, terracotta", "Les deux arcs sur la ruelle. Depuis la rue, on voit l'escalier avant de voir le magasin.": "The two arches on the alley. From the street, you see the stair before the shop.", "Plan.": "Plan.", "Rien n'est d'équerre. Le mur le plus faux reçoit les niches.": "Nothing is square. The most crooked wall takes the niches.", "Coupe.": "Section.", "Le jour traverse la terre cuite avant d'entrer.": "Daylight passes through terracotta before entering.", "Le rez-de-chaussée. Les niches sont creusées dans l'épaisseur de la brique.": "The ground floor. The niches are carved into the thickness of the brick.", "Ranger n'est pas un détail : c'est le plan.": "Storage is not a detail: it is the plan.", "Le mur long est une carte : l'Italie, la France, l'Asie, puis la meule et la truffe. On ne cherche pas un rayon, on longe des pays.": "The long wall is a map: Italy, France, Asia, then the cheese wheel and the truffle. You do not look for an aisle; you walk past countries.", "Le frais ne s'aligne pas contre un mur : il forme un U dans lequel on entre et où l'on est servi de trois côtés. Aucune cloison ; ce sont les comptoirs, les enseignes suspendues et le dessin du sol qui découpent l'espace. On lit le magasin avec les pieds avant de le lire avec les yeux.": "The fresh counters do not line a wall: they form a U you step into and are served from three sides. No partitions; the counters, the hanging signs and the floor pattern divide the space. You read the shop with your feet before your eyes.", "Bois, carreaux de ciment, terre cuite, laiton": "Wood, cement tiles, terracotta, brass", "Livré, 2020 · exploité jusqu'en 2025": "Completed, 2020 · in use until 2025", "Photographie.": "Photograph.", "La façade au couchant. Trois grandes vitrines donnent le magasin en entier.": "The façade at sunset. Three large shop windows show the whole store.", "Le mur long, le U du frais, la façade oblique.": "The long wall, the fresh U, the oblique façade.", "La fromagerie. L'enseigne nomme, le sol délimite.": "The cheese counter. The sign names; the floor defines.", "Photographies : Soukaina Filali Architects.": "Photographs: Soukaina Filali Architects.", "Épicerie fine, Rabat": "Delicatessen, Rabat", "Le rayonnage n'est pas posé contre le mur, il est le mur.": "The shelving is not set against the wall; it is the wall.", "Un mur de béton, une ouverture carrée et, derrière le verre, un châssis de chêne qui prend toute la hauteur d'homme, tourne l'angle et fait tout le magasin.": "A concrete wall, a square opening and, behind the glass, an oak frame that takes the full height of a person, turns the corner and makes the whole shop.", "De loin, les bocaux et les paquets forment une texture, comme un claustra qu'on aurait rempli. De près, chacun redevient un produit qu'on prend en main. Au-dessus de la grille, le volume reste vide : il suffit de lever les yeux pour trouver de l'air.": "From afar, jars and packets form a texture, like a filled-in screen. Up close, each becomes again a product to hold. Above the grid the volume stays empty: look up and there is air.", "Épicerie fine, façade et intérieur": "Delicatessen, façade and interior", "Chêne massif, béton": "Solid oak, concrete", "La façade. Un mur plein, une seule ouverture, et la grille de chêne derrière le verre.": "The façade. A solid wall, a single opening, and the oak grid behind the glass.", "L'allée sèche. La marchandise fait la texture du mur.": "The dry-goods aisle. The goods make the texture of the wall.", "Coupe transversale.": "Cross section.", "La hauteur qu'on ne remplit pas.": "The height left unfilled.", "Rien n'était déplaçable. Tout a été assumé.": "Nothing could be moved. Everything was embraced.", "L'appartement était plein de courbes. Les redresser aurait coûté cher et donné un lieu tiède : elles sont gardées, puis accentuées, jusqu'à devenir le système du projet.": "The apartment was full of curves. Straightening them would have been costly and left a lukewarm place: they are kept, then accentuated, until they become the system of the project.", "Une entrée sombre, une cuisine posée sur la porte, un faux plafond qui écrasait, un escalier impossible à déplacer. Aucun de ces défauts n'a été maquillé : chacun est devenu une décision.": "A dark entrance, a kitchen set against the front door, a crushing false ceiling, a stair that could not be moved. None of these flaws was disguised: each became a decision.", "Appartement en duplex, réhabilitation": "Duplex apartment, refurbishment", "Chêne clair, bronze brossé": "Light oak, brushed bronze", "L'entrée. Le garde-corps de bronze sombre contre le chêne clair.": "The entrance. The dark bronze balustrade against the light oak.", "L'entrée créée là où se tenait la cuisine.": "The entrance created where the kitchen used to be.", "Je ne commence jamais par une forme.": "I never begin with a form.", "Je commence par regarder ce que les gens font déjà : par où ils entrent, où ils s'arrêtent, ce qu'ils posent par terre, ce qu'ils contournent. Un lieu a toujours des règles avant qu'on y construise. Elles ne sont écrites nulle part, et pourtant tout le monde les respecte.": "I begin by watching what people already do: where they enter, where they stop, what they set on the ground, what they walk around. A place always has rules before anything is built there. They are written nowhere, and yet everyone follows them.", "Le travail consiste à les retrouver, puis à les tenir. Une marche pose une limite là où un mur serait de trop. Une ombre décide d'une implantation sans rien interdire. Le projet ne remplace pas l'usage : il lui donne la forme qu'il n'avait pas.": "The work is to find them, then to hold them. A step sets a limit where a wall would be too much. A shadow decides a layout without forbidding anything. The project does not replace the use: it gives it the form it lacked.", "Un lieu arrive rarement propre. Il a des courbes qu'on n'a pas choisies, un escalier au mauvais endroit, un plafond trop bas. Je ne corrige pas les défauts d'un lieu, j'en fais le projet.": "A place rarely arrives clean. It has curves no one chose, a stair in the wrong place, a ceiling too low. I do not correct a place's flaws; I make them the project.", "Soukaina Filali, architecte": "Soukaina Filali, architect", "Une agence d'architecture au Maroc. Du premier relevé au chantier, une même règle : l'usage d'abord.": "An architecture studio in Morocco. From the first survey to the building site, one rule: use comes first.", "L'agence travaille l'habitat, les équipements, le commerce et la réhabilitation, en maîtrise d'œuvre complète : conception, dossier de permis, consultation des entreprises et suivi de chantier.": "The studio works on housing, public buildings, retail and refurbishment, with full project delivery: design, planning application, tendering and site supervision.", "Soukaina Filali est architecte DESA, HMONP, diplômée de l'École Spéciale d'Architecture de Paris. Elle a exercé en France, au sein d'agences et de groupes de construction, sur des programmes de logement, de santé, de tertiaire et de concours, avant de fonder son agence au Maroc. Elle enseigne l'architecture intérieure au Collège Art & Design de Casablanca, en Master exécutif.": "Soukaina Filali is a licensed architect (DESA, HMONP), graduate of the École Spéciale d'Architecture in Paris. She practised in France, within architecture studios and construction groups, on housing, healthcare, office and competition projects, before founding her studio in Morocco. She teaches interior architecture at Collège Art & Design in Casablanca, in the Executive Master programme.", "Recherche": "Research", "L'habiter avant la forme": "Dwelling before form", "Tout part d'un terrain : avant de dessiner une règle, il faut l'avoir vue tenir chez ceux qui habitent.": "Everything starts from the field: before drawing a rule, you must have seen it hold among those who live there.", "Diplôme · École Spéciale d'Architecture, Paris": "Diploma · École Spéciale d'Architecture, Paris", "L'habitat social au Maroc": "Social housing in Morocco", "Une enquête de terrain menée en vivant avec les habitants de douars, de logements sociaux, de logements non réglementés et de bidonvilles à Casablanca. Les modes de vie y sont relevés, et l'on distingue ce qui relève du choix de ce qui relève de la contrainte. De ce terrain est né un code architectural propre à cette culture. Prix du meilleur diplôme.": "A field survey carried out by living with residents of douars, social housing, informal housing and shantytowns in Casablanca. Ways of living are recorded, separating what is chosen from what is imposed. From this fieldwork came an architectural code specific to this culture. Awarded best diploma.", "Livre en cours": "Book in progress", "La Fabrique de l'Invisible": "La Fabrique de l'Invisible", "Des règles spatiales tirées du vernaculaire marocain : le seuil, le filtre, l'épaisseur, l'ombre. Des règles qui ne sont écrites nulle part et que tout le monde respecte. Ce sont elles qui irriguent les projets de l'agence.": "Spatial rules drawn from Moroccan vernacular: the threshold, the filter, thickness, shade. Rules written nowhere that everyone follows. They run through all of the studio's projects.", "Parlons d'un lieu.": "Let's talk about a place.", "Écrire": "Write", "Appeler": "Call", "Voir": "See", "Les rendus sont des images de projet. Chaque projet porte son statut.": "Renderings are project images. Each project states its status.", "Fermer": "Close", "← Préc.": "← Prev.", "Suiv. →": "Next →", "Projet précédent": "Previous project", "Projet suivant": "Next project", "Villa L'Intervalle": "Villa L'Intervalle"};
-  var nodes=[];
-  function collect(){nodes=[];var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null);var n;
-    while(n=w.nextNode()){var p=n.parentNode;if(!p||p.closest('script,style'))continue;var t=n.nodeValue.trim();if(!t)continue;
-      if(n.__fr===undefined)n.__fr=n.nodeValue;nodes.push(n);}}
-  var btn=document.getElementById('langbtn');
-  function apply(l){collect();nodes.forEach(function(n){var t=n.__fr.trim();
-      if(l==='en'&&EN[t]!==undefined){n.nodeValue=n.__fr.replace(t,EN[t]);}else{n.nodeValue=n.__fr;}});
-    document.documentElement.lang=l;btn.textContent=l==='en'?'FR':'EN';btn.setAttribute('aria-label',l==='en'?'Version française':'English version');
-    try{localStorage.setItem('sfa-lang',l)}catch(e){}}
-  var cur='fr';try{cur=localStorage.getItem('sfa-lang')||'fr'}catch(e){}
-  btn.addEventListener('click',function(){cur=cur==='en'?'fr':'en';apply(cur)});
-  window.addEventListener('hashchange',function(){if(cur==='en')setTimeout(function(){apply('en')},0)});
-  if(cur==='en')apply('en');
-})();
-</script>
-</body>
-</html>
+</script></body></html>
