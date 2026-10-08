@@ -1,0 +1,30 @@
+# soukaina-filali.com
+# Tout le site est ouvert aux moteurs de recherche et aux IA.
+
+User-agent: *
+Allow: /
+
+# Moteurs de recherche
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Recherche des IA (ChatGPT, Claude, Perplexity)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://soukaina-filali.com/sitemap.xml
